@@ -1,0 +1,25 @@
+{
+  "name": "pkgpaths",
+  "version": "0.1.0",
+  "description": "Path expressions helping you to move your configuration to package.json",
+  "main": "pkgpaths.js",
+  "scripts": {
+    "test": "mocha pkgpaths.spec.js",
+    "test-watch": "mocha --watch pkgpaths.spec.js"
+  },
+  "keywords": [
+    "package.json",
+    "configuration",
+    "pkgvars"
+  ],
+  "author": "Stijn de Witt",
+  "license": "CC-BY-4.0",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "object-path": "^0.9.2",
+    "path": "^0.12.7"
+  }
+}
