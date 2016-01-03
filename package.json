@@ -1,19 +1,31 @@
 {
-  "name": "pkgpaths",
+  "name": "pkgpath",
   "version": "0.1.0",
-  "description": "Path expressions helping you to move your configuration to package.json",
-  "main": "pkgpaths.js",
+  "description": "Move those pesky configuration files to your package.json with pkgpath",
+  "main": "pkgpath.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/download/pkgpath.git"
+  },
   "scripts": {
-    "test": "mocha pkgpaths.spec.js",
-    "test-watch": "mocha --watch pkgpaths.spec.js"
+    "test": "mocha pkgpath.spec.js",
+    "test-watch": "mocha --watch pkgpath.spec.js"
   },
   "keywords": [
     "package.json",
     "configuration",
-    "pkgvars"
+    "pkgcfg",
+    "pkgvar",
+    "pkgpath",
+    "pkgtransform",
+    "pkgmerge"
   ],
   "author": "Stijn de Witt",
   "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/download/pkgpath/issues"
+  },
+  "homepage": "https://github.com/download/pkgpath",
   "devDependencies": {
     "chai": "^3.4.1",
     "mocha": "^2.3.4"

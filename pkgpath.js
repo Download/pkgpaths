@@ -4,7 +4,7 @@ pkg = JSON.parse(fs.readFileSync('package.json')),
 objectPath = require('object-path'),
 path = require('path');
 
-function pkgpaths(path) {
+function pkgpath(path) {
 	var root = path ? objectPath.get(pkg, path) : pkg;
 	resolved = resolve(root);
 	return resolved;
@@ -14,4 +14,4 @@ function resolve(root, node, resolveTree) {
 	return root;
 }
 
-module.exports = pkgpaths;
+module.exports = pkgpath;
